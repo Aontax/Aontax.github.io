@@ -37,13 +37,14 @@ repository: "Aontax/Aontax.github.io"
 logo: "/assets/images/logoBig.png"
 # Build settings
 # theme: minimal-mistakes-jekyll
-remote_theme: "mmistakes/minimal-mistakes@4.20.1"
+remote_theme: "mmistakes/minimal-mistakes"
 
 minimal_mistakes_skin: "default" # default "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 plugins:
   - jekyll-feed
-  - jekyll-include-cache
+  - jekyll/jekyll-include-cache
+  # - jekyll-include-cache
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
@@ -52,7 +53,7 @@ plugins:
 
 # 包含Add include: ["_pages"] to _config.yml
 include:
-  - .htaccess
+  # - .htaccess
   - _pages
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
